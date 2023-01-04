@@ -1,4 +1,12 @@
 import './App.css';
+import Logo from './components/Logo';
+import NavigationBar from './components/NavigationBar';
+import FuncButton from './components/FuncButton';
+import FuncDiv from './components/FuncDiv';
+import ClassButton from './components/ClassButton';
+import ClassDiv from './components/ClassDiv';
+import Button from './components/Button';
+import Hero from './components/Hero';
 
 // app.js yra pagrindinis komponentas
 // vienas failas = vienas komponentas
@@ -29,22 +37,34 @@ const createSmallTextTab = (title)=>{
   );
 }
   return (
-   <><><div className='logo'>
-      <img src='https://digiltable.com/wp-content/uploads/edd/2021/08/Web-designs-logos-creative-2021.png' alt='Logo'
-      />
-    </div>
-    </>
-    <div className="nav">
-        <ul>
-          <li><a href='home'>Home</a></li>
-          <li><a href='product'>Product</a></li>
-          <li><a href='company'>Company</a></li>
-          <li><a href='contact'>Contact</a></li>
-        </ul>
-      </div>
-      <div className="headerImage">
-          <p className='imageText'>Header Image</p>
-      </div>
+    <>
+    <Logo/>
+    <NavigationBar/>
+    <FuncButton 
+     title="Nespausk Prasau" 
+     color='red'/>
+    <FuncButton 
+     title="Spausk Mane"/>
+    <FuncDiv
+     title='Kazkas' 
+     subtitle='kazkur' 
+     buttonText='Kas'
+     color='blue'>
+     </FuncDiv>
+     <ClassButton 
+     title='Hello'
+     />
+     <ClassDiv
+     title='Class'
+     subtitle='Class Div'
+     buttonText='Do not Click'
+     />
+     <Button>Tomai Spausk</Button>
+     <Hero
+     title='Info Hero'
+     subtitle='Info Subtitle'
+     color='blue'
+     />
       <div className="aboutTiles">
         {createSmallTextTab('About')}
         {createSmallTextTab('Company')}

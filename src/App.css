@@ -24,11 +24,6 @@ a {
   color: white;
 }
 
-img {
-  width: 100px;
-  height: 100px;
-}
-
 .headerImage {
   height: 350px;
   background-color: olivedrab;
@@ -70,4 +65,9 @@ img {
   color: black;
   background-color: #f1f1f1;
   width: 300px;
+}
+
+.hero {
+  padding: 50px;
+  color: white;
 }
